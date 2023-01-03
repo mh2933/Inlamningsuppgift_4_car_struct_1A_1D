@@ -5,16 +5,17 @@
 
 
 /*************************************************************************************************
- main.c: Lagrar car-data för x antal bilar och skriver ut i terminalen
-         samt till filen "car.txt". Undantag sker om dynamiskt minne inte
-		 kunde allokeras, då avslutas programmet med felkod 1.
+ main.c: Uppgift 1d och 1e. 
+         Lagrar car-data för x antal bilar och skriver ut till ostream i form av en textfil 
+	 car.txt. Först skrivs orginaldatan ut och sedan bifogas car-datan där car3 får färgen 
+	 Green och växellådan Automatic. 
  *************************************************************************************************/
 int main(void)
 {
 	setlocale(LC_ALL, "Swedish"); // svenska tecken
 
 	struct Car car1, car2, car3;
-	FILE* ostream = fopen("car4.txt", "a+"); // "r" = read, "w" = write, "a" = append, "r+", "w+", "a+"
+	FILE* ostream = fopen("car.txt", "a+"); // "r" = read, "w" = write, "a" = append, "r+", "w+", "a+"
 
 	/* array som används längre ner då ej car_print funktionen används */
 	struct Car* car_array[] =
@@ -47,7 +48,7 @@ int main(void)
  sizeof() operatorn. car_print funktionen används inne i ittetratorn.
 
 	                 - ostream : skriver ut en .txt fil.
-					 - stdout  : skriver ut till terminalen.   
+		         - stdout  : skriver ut till terminalen.   
 ************************************************************************/
 	for (struct Car** i = car_array; i < car_array + num_objects; i++)
 	{
