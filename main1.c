@@ -5,10 +5,8 @@
 
 /*************************************************************************************************
  main.c: Lagrar car-data för x antal bilar och skriver ut i terminalen
-         samt till filen "car.txt". Nere i for loopen väljs stdout för utskrift till terminalen.
-	 Växellådan på car3 byts till automatic från manual inuti car_intit() och 
-	 car_change_transmission() funktionerna. Färgen byts från White till Green i funktionen
-	 car_change_color.
+         eller till filen "car.txt" då ostream väljs nere i for loopen. Nere i for loopen väljs 
+	 stdout för utskrift till terminalen.
  *************************************************************************************************/
 int main(void)
 {
@@ -36,10 +34,10 @@ int main(void)
 	/* andra initieringen, Ändrar växellådan till motsatsen på car1-car3 */
 	//car_init(&car1, "Volvo", "V70", "Black", 1995, car_change_transmission(&car1));
 	//car_init(&car2, "BMW", "Z3", "Blue", 2001, car_change_transmission(&car2));
-	car_init(&car3, "Skoda", "Octavia RS", "White", 2003, car_change_transmission(&car3));
+	//car_init(&car3, "Skoda", "Octavia RS", "White", 2003, car_change_transmission(&car3));
 	
 	/* Ändrar färgen på car3 till Grön, och output stream anges här som 0 = stdout */
-	car_change_color(&car3, "Green");
+	//car_change_color(&car3, "Green");
 	
 /************************************************************************
  Array itterator, för de tre struct car objekten, en dubbelpekare behövs 
