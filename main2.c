@@ -56,5 +56,6 @@ int main(void)
 		//printf("%s\n", *i);
 	}
 
+	fclose(ostream);
 	return 0;
 }
