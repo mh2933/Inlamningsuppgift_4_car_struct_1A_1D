@@ -5,7 +5,7 @@
 #include <stdlib.h> // malloc, ralloc samt free mm. 
 
 /********************************************************************************   
-  enumerationer har oändligt scope i C likt Makron 
+  enumerationer har oÃ¤ndligt scope i C likt Makron 
  ********************************************************************************/
 enum transmission
 {
@@ -32,11 +32,11 @@ struct Car
 /**********************************************************************************************
   car_init: Lagrar angiven bil data i ett car_objekt, initieringsrutin.
     
-	        - brand          : Bilmärket lagrat som text.
+	        - brand          : BilmÃ¤rket lagrat som text.
 			- model          : Bilmodell lagrad som text.
-			- color          : Bilens färg lagrad som text.
-			- year_of_launch : Året då bilmodellen togs i bruk lagrat som 
-			                   ett heltal (gärna osignerat).
+			- color          : Bilens fÃ¤rg lagrad som text.
+			- year_of_launch : Ã…ret dÃ¥ bilmodellen togs i bruk lagrat som 
+			                   ett heltal (gÃ¤rna osignerat).
 			- transmissiion  : Bilens transmissionstyp (manuell/automat) som 
 			                   en enumerator av enumerationen car_transmission.
  **********************************************************************************************/
@@ -48,22 +48,22 @@ void car_init(struct Car* self,
 	          enum transmission transmission);
 
 /**********************************************************************************************
-  car_clear: Nollställer bildata lagrat av angivet car_objekt.
+  car_clear: NollstÃ¤ller bildata lagrat av angivet car_objekt.
 
-			- self          : Pekare till objektet som skall nollställas.
+			- self          : Pekare till objektet som skall nollstÃ¤llas.
  **********************************************************************************************/
 void car_clear(struct Car* self);
 
 /**********************************************************************************************
   car_new: Allokerar minne och lagrar angiven car-data i ett car-objekt.
            En pekare till det dynamiskt allokerade objektet returneras.
-		   Om minnesallokeringen misslyckas så returneras null.
+		   Om minnesallokeringen misslyckas sÃ¥ returneras null.
 
-		   - brand          : Bilmärket lagrat som text.
+		   - brand          : BilmÃ¤rket lagrat som text.
 		   - model          : Bilmodell lagrad som text.
-		   - color          : Bilens färg lagrad som text.
-		   - year_of_launch : Året då bilmodellen togs i bruk lagrat som 
-		                      ett heltal (gärna osignerat).
+		   - color          : Bilens fÃ¤rg lagrad som text.
+		   - year_of_launch : Ã…ret dÃ¥ bilmodellen togs i bruk lagrat som 
+		                      ett heltal (gÃ¤rna osignerat).
 
 		   - transmissiion  : Bilens transmissionstyp (manuell/automat) som 
 		                      en enumerator av enumerationen car_transmission.
@@ -75,47 +75,47 @@ struct Car* car_new(char* brand,
 	                enum transmission transmission);
 
 /*************************************************************************************************
-  car_delete: Raderar angivet car-objekt genom att frigöra dynamiskt 
-              allokerat minne för denna och sätter motsvarande pekare 
-			  till null. För att möjliggöra detta passeras adressen till 
-			  den pekare som pekar på det dynamiskt allokerade minnet.
+  car_delete: Raderar angivet car-objekt genom att frigÃ¶ra dynamiskt 
+              allokerat minne fÃ¶r denna och sÃ¤tter motsvarande pekare 
+			  till null. FÃ¶r att mÃ¶jliggÃ¶ra detta passeras adressen till 
+			  den pekare som pekar pÃ¥ det dynamiskt allokerade minnet.
               
-			- self          : Pekare till objektet som skall nollställas.
+			- self          : Pekare till objektet som skall nollstÃ¤llas.
  *************************************************************************************************/
 void car_delete(struct Car** self);
 
 /*************************************************************************************************
-  car_print: Skriver ut lagrad car-data via angiven utström, där
-             standardutenheten stdout används som default för utskrift
+  car_print: Skriver ut lagrad car-data via angiven utstrÃ¶m, dÃ¤r
+             standardutenheten stdout anvÃ¤nds som default fÃ¶r utskrift
 			 i terminalen.
 
 			- self          : Pekare till objektet som lagrar car-data.
-			- ostream       : Pekare till angiven utström (default = stdout).
+			- ostream       : Pekare till angiven utstrÃ¶m (default = stdout).
  *************************************************************************************************/
 void car_print(struct Car* self,
 	           FILE* ostream);
 
 /*************************************************************************************************
-  car_transmission_str: Retunerar bilens växellåda (manuell/automat) i textform.
+  car_transmission_str: Retunerar bilens vÃ¤xellÃ¥da (manuell/automat) i textform.
 
 			            - self       : Pekare till objektet som lagrar car-data.
  *************************************************************************************************/
 char* car_transmission_str(struct Car* self);
 
 /*************************************************************************************************
-  car_change_color: Ändrar färgen på car-objektet
+  car_change_color: Ã„ndrar fÃ¤rgen pÃ¥ car-objektet
    
                     - self                : Pekare till Car objektet.
 				    - changed_color       : Pekare till medlemmen color inuti strukten car.
-					- FILE*               : Fil pekare för vald utström.
+					- FILE*               : Fil pekare fÃ¶r vald utstrÃ¶m.
  *************************************************************************************************/
 void car_change_color(struct Car* self, char* changed_color, FILE* ostream);
 
 /*************************************************************************************************
-  car_change_transmission: Ändrar växellådan till motsatsen, 
+  car_change_transmission: Ã„ndrar vÃ¤xellÃ¥dan till motsatsen, 
 
 					       - self       : Pekare till Car objektet.
-						   - FILE*      : Fil pekare för vald utström.
+						   - FILE*      : Fil pekare fÃ¶r vald utstrÃ¶m.
  *************************************************************************************************/
 char car_change_transmission(struct Car* self, FILE* ostream);
 
