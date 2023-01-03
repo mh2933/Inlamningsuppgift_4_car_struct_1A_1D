@@ -80,7 +80,8 @@ void car_change_color(struct Car* self, char* changed_color)
 {
 	
 	//if (!ostream) ostream = stdout;
-	fprintf(ostream,"%s\n", self->color = changed_color);
+	//fprintf(ostream,"%s\n", self->color = changed_color);
+	self->color = changed_color;
 	return;
 }
 
