@@ -6,8 +6,9 @@
 
 /*************************************************************************************************
  main.c: Lagrar car-data för x antal bilar och skriver ut i terminalen
-         samt till filen "car.txt". Undantag sker om dynamiskt minne inte
-		 kunde allokeras, då avslutas programmet med felkod 1.
+         samt till filen "car.txt" då ostream används som utström.
+	 En första initiering utförs med korrekt car-data, och en andra utförs med uppdaterad data.
+	 En array implimenteras då ej car_print funktionen används. 
  *************************************************************************************************/
 int main(void)
 {
