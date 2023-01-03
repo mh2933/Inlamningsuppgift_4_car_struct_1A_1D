@@ -13,9 +13,7 @@ void car_init(struct Car* self,
 	self->color = color;
 	self->year_of_launch = year_of_launch;
 	self->transmission = transmission;
-
 	
-
 	return;
 }
 
@@ -26,8 +24,7 @@ void car_clear(struct Car* self)
 	self->color = 0;
 	self->year_of_launch = 0;
 	self->transmission = TRANSMISSION_NONE;
-
-	
+        
 	return;
 }
 
@@ -79,10 +76,10 @@ char* car_transmission_str(struct Car* self)
 	
 }
 
-void car_change_color(struct Car* self, char* changed_color, FILE* ostream)
+void car_change_color(struct Car* self, char* changed_color)
 {
 	
-	if (!ostream) ostream = stdout;
+	//if (!ostream) ostream = stdout;
 	fprintf(ostream,"%s\n", self->color = changed_color);
 	return;
 }
@@ -93,7 +90,7 @@ car_change_transmission: Byter växellådorna till motsatsten
 
 			 - self: Pekare till car objektet.
 ************************************************************************/
-char car_change_transmission(struct Car* self, FILE* ostream)
+char car_change_transmission(struct Car* self)
 {
 	if (self->transmission == TRANSMISSION_MANUAL) return TRANSMISSION_AUTOMATIC;
 	if (self->transmission == TRANSMISSION_AUTOMATIC) return TRANSMISSION_MANUAL;
