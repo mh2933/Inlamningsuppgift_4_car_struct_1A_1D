@@ -13,8 +13,8 @@ ANDRA: uppgift 1d till 1e
 - car1.h
 
 TREDJE: uppgift 1f
-- main_1e.c
-- car.c
-- car.h
+- main_1f.c
+- car_1f.c
+- car_1f.h
 
 
