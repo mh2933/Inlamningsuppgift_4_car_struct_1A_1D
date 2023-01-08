@@ -1,14 +1,20 @@
 # Inlamningsuppgift_4_car_struct_1a_1e
 
-Koden är uppdelad i fyra filer där main.c skiljer sig main1.c och main2.c.
+Koden är uppdelad i tre delar.
 
-main1.c innehåller uppgift 1a till 1c för utskrift till terminalen.
+FÖRSTA: uppgift 1a till 1c
+- main1.c
+- car1.c
+- car1.h
 
-main2.c innehåller uppgift 1d till 1e där innehållet skrivs ut till textfil och färg samt växellåda ändras på car3.
+ANDRA: uppgift 1d till 1e
+- main2.c
+- car1.c
+- car1.h
 
-1e kommer helt separat i tre filer då ändringar gjorts i alla tre filer.
-Dessa består av: 
+TREDJE: uppgift 1f
 - main_1e.c
 - car.c
 - car.h
+
 
