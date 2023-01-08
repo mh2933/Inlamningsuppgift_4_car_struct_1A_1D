@@ -4,7 +4,8 @@
 
 
 /*************************************************************************************************
- main.c: Lagrar car-data för x antal bilar och skriver ut i terminalen
+ main.c: Uppgift 1a till 1c.
+         Lagrar car-data för x antal bilar och skriver ut i terminalen
          eller till filen "car.txt" då ostream väljs nere i for loopen. Nere i for loopen väljs 
 	 stdout för utskrift till terminalen.
  *************************************************************************************************/
