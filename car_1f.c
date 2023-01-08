@@ -88,7 +88,7 @@ void car_change_color(struct Car* self, char* changed_color)
 }
 
 /************************************************************************ 
-car_change_transmission: Byter v‰xellÂdorna till motsatsten
+car_change_transmission: Byter v√§xell√•dorna till motsatsten
                          Automatic <---> Manual.
 
 						 - self: Pekare till car objektet.
