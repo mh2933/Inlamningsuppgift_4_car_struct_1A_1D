@@ -1,6 +1,6 @@
 # Inlamningsuppgift_4_car_struct_1a_1e
 
-Koden är uppdelad i tre delar.
+Koden är uppdelad i fyra delar.
 
 FÖRSTA: uppgift 1a till 1c
 - main1.c
@@ -17,4 +17,8 @@ TREDJE: uppgift 1f
 - car_1f.c
 - car_1f.h
 
+Fjärde: uppgift 2
+- main.c
+- car.c
+- car.h
 
