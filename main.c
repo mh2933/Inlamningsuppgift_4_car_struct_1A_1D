@@ -8,6 +8,12 @@
 		 Lagrar car-data för x antal bilar och skriver ut i terminalen
 		 eller till filen "car.txt" då ostream väljs. 
 		 Växellåda byts och kulör updateras. 
+		 
+		 b) Detta var mycket arbete för lite resultat, när man känner sig mer bekväm med 
+		    koden så kommer det vara kul att snygga till koden men med tanke på att man 
+		    dessutom förlorar massa minne så är motivationen svår. 
+		    Jag föredrar nog just nu den lite mer lättskrivna koden, där inte funtionspekare
+		    används. OMG det var en långkörare detta!! 
  *************************************************************************************************/
 int main(void)
 {
